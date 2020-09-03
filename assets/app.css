@@ -1,3 +1,4 @@
+
 :root{
     --deepblue:#000930;
     --blue:#1a3a6a;
@@ -7,6 +8,7 @@
     --white:#eef6e2;
 
 }
+
 /* fonts */
 @font-face{
     font-family: 'aquire';
@@ -48,12 +50,43 @@
 body
 {
     overflow-x: hidden;
+    padding-right: 0 !important
 }
 html{
     overflow-x:hidden;
     scroll-padding-top: 4rem;
 }
+/*scrollbar*/
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background:var(--white);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:var(--orange);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--green);
+  }
 /* navbar */
+.navbar-brand{
+    opacity:0;
+    animation:fadeLeft 1.5s forwards;
+    animation-delay: 2s;
+}
+.navbar-nav{
+    opacity:0;
+    animation:fadeRight 1.5s forwards;
+    animation-delay: 2s;
+}
 nav{
 
     height: 15vh;
@@ -173,6 +206,7 @@ nav button:focus{
     left:50%;
     transform:translateX(-50%);
     text-align:center;
+    
 }
 .down i
 {
@@ -271,6 +305,82 @@ nav button:focus{
 {
     text-align:right;
 }
+.card-body
+{
+    padding:0.5rem 1rem;
+}
+#events .col-md-8,#events .col-md-4
+{
+    display:flex;
+    justify-content: center;
+    align-items:center
+}
+.btn
+{
+   background-color:transparent;
+   border-radius:5px 10px 5px 10px;
+}
+
+#know
+{
+    border:1px solid var(--green);
+    color:var(--green);
+}
+#register
+{
+    border:1px solid var(--yellow);
+    color:var(--yellow);
+    margin-left: 6rem;
+    
+}
+#know:hover,#register:hover
+{
+    border:1px solid var(--orange);
+    color:var(--orange);
+}
+#know:focus,#register:focus
+{
+    outline:none;
+}
+.modal-content
+{
+    background-color:var(--white);
+    border:none;
+    width:80%;
+    height:60vh;
+    box-shadow: 5px 10px 10px 5px rgba(0,0,0,0.4);
+    border-radius:5px 10px 5px 10px;
+
+}
+.modal-header
+{
+    background-color:var(--green);
+    border-bottom:5px solid var(--deepblue);
+    color:var(--deepblue);
+}
+.modal-header .modal-title{
+    font-family: 'aquireBold';
+}
+.modal-body
+{
+    color:var(--deepblue);
+    font-family: 'robotoLight';
+    
+}
+.close:focus
+{
+    outline:none;
+}
+
+.close, .close:hover
+{
+    color:var(--deepblue);
+    border:none;
+    font-size:2rem;
+    opacity:1;
+}
+
+
 
 /* team */
 #team .line-1
@@ -365,6 +475,16 @@ footer p{
     .navbar-toggler.collapsed ~ .navbar-collapse {
         transition: left 500ms ease-in-out;
     }
+    .navbar-nav{
+        opacity:1;
+        animation:fadeRight 0s forwards;
+        animation-delay: 0s;
+    }
+    .navbar-toggler{
+        opacity:0;
+        animation:fadeRight 1.5s forwards;
+        animation-delay: 2s;
+    }
     .active{
         border-bottom: none;
     }
@@ -425,11 +545,19 @@ footer p{
     {
     font-size:1.2rem;
     }
+    .down
+    {
+        top:85vh;
+    }
     #about, #events, #team{
         padding:2.9rem 1rem;
     }
     #about p, #team p{
         font-size: 1rem;
+    }
+    #register
+    {
+    float:right;
     }
     .text
     {
@@ -464,6 +592,30 @@ footer p{
     {
         opacity:1;
         transform:translateY(0);
+    }
+}
+@keyframes fadeLeft
+{
+    0%
+    {
+        transform:translateX(-4rem);
+    }
+    100%
+    {
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+@keyframes fadeRight
+{
+    0%
+    {
+        transform:translateX(4rem);
+    }
+    100%
+    {
+        opacity:1;
+        transform:translateX(0);
     }
 }
 

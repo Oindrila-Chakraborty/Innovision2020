@@ -42,3 +42,11 @@ var Et = setInterval(function() {
     duration: 1200,
   })
   
+  $('.modal').on('show.bs.modal', function () {
+    $("body").css('overflow-y', 'hidden');
+    $("html").css('overflow-y', 'hidden');
+  });
+  $('.modal').on('hide.bs.modal', function () {
+    $("body").css('overflow-y', 'auto');
+    $("html").css('overflow-y', 'auto');
+  });
