@@ -1,0 +1,511 @@
+:root{
+    --deepblue:#000930;
+    --blue:#1a3a6a;
+    --green:#6fc48e;
+    --orange:#f47321;
+    --yellow:#fbec7b;
+    --white:#eef6e2;
+
+}
+/* fonts */
+@font-face{
+    font-family: 'aquire';
+    src: url('../Fonts/Aquire/Aquire.otf');
+}
+@font-face{
+    font-family: 'aquireLight';
+    src: url('../Fonts/Aquire/AquireLight.otf');
+}
+@font-face{
+    font-family: 'aquireBold';
+    src: url('../Fonts/Aquire/AquireBold.otf');
+}
+@font-face{
+    font-family: 'roboto';
+    src: url('../Fonts/Roboto/Roboto.ttf');
+
+}
+@font-face{
+    font-family: 'robotoLight';
+    src: url('../Fonts/Roboto/Roboto-Light.ttf');
+
+}
+@font-face{
+    font-family: 'robotoMedium';
+    src: url('../Fonts/Roboto/Roboto-Medium.ttf');
+
+}
+
+
+*, html, body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'robotoMedium';
+    list-style-type: none;
+}
+body
+{
+    overflow-x: hidden;
+}
+html{
+    overflow-x:hidden;
+    scroll-padding-top: 4rem;
+}
+/* navbar */
+nav{
+
+    height: 15vh;
+}
+nav a{
+    color: var(--white);
+    font-family: 'robotoLight';
+}
+nav .navbar-nav{
+    width: 50%;
+    font-size: 1.2rem;
+}
+nav .nav-link{
+    transition: all 0.3s;
+}
+.active{
+    color: var(--orange);
+    border-bottom: 2px solid var(--orange);
+}
+nav .nav-link:hover, .nav-link:focus{
+    color: var(--orange);
+    border-bottom: 2px solid var(--orange);
+}
+
+nav button i{
+    color: var(--white);
+    font-size: 2rem;
+}
+nav button:focus{
+    outline: none;
+}
+.nav-colored{
+    background-color: var(--deepblue);
+    transition: background-color 200ms linear;
+}
+.nav-transparent{
+    background-color:transparent;
+}
+
+
+/* landing */
+#home{
+    background-image:url(https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+#home .landing{
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 30vh;
+    color: var(--white);
+}
+#home .container h2{
+    font-size: 5rem;
+    color: var(--orange);
+    letter-spacing: 3px;
+    font-family:'aquireBold';
+}
+#home .landing h4{
+    font-weight: 100;
+    color: var(--white);
+    font-family: 'aquireLight';
+    animation:scale 1s forwards;
+}
+#home .landing h2
+{
+    opacity:0;
+    animation:fadeUp 1.5s forwards;
+    animation-delay: 0.5s;
+}
+
+
+/* timer */
+.timer{
+    opacity:0;
+    animation:fadeDown 1s forwards;
+    animation-delay:1.5s;
+}
+#event-timer
+{
+    display:flex;
+    flex-direction: row;
+    color:var(--white);
+    font-size:2rem;
+    width: 50%;
+    margin: 0 auto;
+    
+}
+#event-timer div
+{
+    margin:1rem;
+    border:1px solid var(--orange);
+    display:flex;
+    flex-direction: column;
+    width:6rem;
+    height:6rem;
+    padding:0.5rem;
+    background-color:transparent;
+    color:var(--orange);
+    font-size:1rem;
+    font-family:'aquire';
+}
+#event-timer span
+{
+    font-size:2rem;
+    font-weight: bold;
+    color:var(--white);
+}
+.down
+{
+    width:5rem;
+    height:5rem;
+    background-color: transparent;
+    position:absolute;
+    top:90vh;
+    left:50%;
+    transform:translateX(-50%);
+    text-align:center;
+}
+.down i
+{
+    display:block;
+    color:var(--green);
+    font-size:2.2rem;
+    animation: up 2s infinite;
+}
+
+
+#about, #events, #team{
+    padding: 3.9em; 
+    padding-top:3.9em;   
+    background-color: #eef6e2;
+}
+
+/* about */
+#about p, #team p
+{
+    color:var(--blue);
+    font-size:1.2rem;
+    line-height: 1.5;
+    font-family: 'robotoLight';
+    font-weight: bold;
+    font-style: italic;
+}
+.heading{
+    padding-bottom:3.9rem;
+    
+}
+.first-letter
+{
+    font-size:3.2rem;  
+    font-weight: 500;
+    font-family: 'aquireBold';
+}
+.section-heading
+{
+    font-size:2.2rem;
+    letter-spacing:0.2rem;
+    color:var(--orange);
+    font-weight:100;
+    font-family: 'aquire';
+}
+.text
+{
+    margin:4rem;
+}
+.line-1
+{
+    width:200px;
+    background-color: var(--yellow);
+    height:10px;
+    margin-bottom:10px;
+    border-radius:5px 50px 50px 5px;
+}
+.line-2
+{
+    width:100px;
+    background-color: var(--green);
+    height:10px;
+    border-radius:5px 50px 50px 5px;
+}
+
+/* events */
+#events
+{
+    background-color:var(--blue);
+}
+.card
+{
+    width:85%;
+    margin:3rem auto 8rem auto;
+    border-left:1px solid var(--yellow);
+    border-bottom:1px solid var(--yellow);
+    background-color:transparent;
+    padding:1rem;
+}
+.right-border
+{
+    border-right:1px solid var(--yellow);
+    border-left:none;
+}
+.card-body .card-title{
+    font-size:2rem;
+    color:var(--orange);
+    font-weight: 100;
+    font-family: 'aquireLight';
+}
+.card-body .card-text{
+    font-size:1.2rem;
+    color:var(--white);
+    font-family: 'robotoLight';
+}
+.right-text
+{
+    text-align:right;
+}
+
+/* team */
+#team .line-1
+{
+    width:250px;
+}
+#team .line-2
+{
+    width:125px;
+}
+#events .line-1
+{
+    width:180px;
+}
+#events .line-2
+{
+    width:90px;
+}
+#team .row .col-6{
+    padding-bottom: 5rem;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+#team .row .col-6 img{
+    height: 80%;
+    width: 80%;
+}
+#team .row .name h4{
+    font-family: 'aquire';
+    color: var(--deepblue);
+    font-size: 1.5rem;
+}
+#team .row .name p{
+    font-family: 'robotoMedium';
+    font-style: italic;
+    color: var(--orange);
+    font-size: 1rem;
+}
+#team .row .name a{
+    color:var(--green);
+    font-size: 1.2em;
+    transition: all 1s;
+}
+#team .row .name a:hover{
+   color: #459663;
+}
+
+/* footer */
+footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+    background-color: var(--deepblue);
+    color: var(--white);
+    text-align: right;
+}
+footer p{
+    border-bottom: 1px solid var(--white);
+    font-family: 'robotoLight';
+    font-size: 1rem;
+    margin-left: 40%;
+    letter-spacing: 3px;
+}
+.footer-links{
+    padding:0;
+    margin:0;
+}
+.footer-links li{
+    display: inline;
+}
+.footer-links li a{
+    color: var(--white);
+    text-shadow: 1px 1px 15px var(--white);
+    font-size: 1.2rem;
+}
+.footer-links li a:hover{
+    color: var(--orange);
+    text-shadow: 1px 1px 15px var(--orange);
+}
+@media screen and (min-width:769px) and (max-width:1200px){
+    nav .navbar-nav{
+        width: 80%;
+    }
+}
+@media screen and (max-width:768px){
+    html{
+        scroll-padding-top: 5rem;
+    }
+    /* navbar */
+    .navbar-toggler.collapsed ~ .navbar-collapse {
+        transition: left 500ms ease-in-out;
+    }
+    .active{
+        border-bottom: none;
+    }
+    nav .nav-link:hover, .nav-link:focus{
+        border-bottom: none;
+        font-size:1.5rem;
+    
+    }
+    .nav-link
+    {
+        padding:20px;
+        font-size: 1.5rem;
+    }
+    
+    .navbar-collapse {
+        position: fixed;
+        top: 0px; 
+        left: 0;
+        padding:30vh 20px 20vh 20px;
+        width: 70%;
+        height: 100vh;
+        background-color: var(--deepblue);
+    }
+
+    .navbar-collapse.collapsing {
+        left: -75%;
+        transition: height 0s ease;
+    }
+
+    .navbar-collapse.show {
+        left: 0;
+        transition: left 300ms ease-in-out;
+    }
+
+    .navbar-toggler.collapsed ~ .navbar-collapse {
+        transition: left 500ms ease-in-out;
+    }
+
+
+    #home .landing h2{
+        font-size:3rem;
+    }
+    #home .landing h4{
+        font-size:1.2rem;
+    }
+    #event-timer{
+        width: 100%;
+    }
+    #event-timer div
+    {
+    width:4rem;
+    height:4rem;
+    padding:0.3rem;
+    color:var(--orange);
+    font-size:0.7rem;
+    }
+    #event-timer span
+    {
+    font-size:1.2rem;
+    }
+    #about, #events, #team{
+        padding:2.9rem 1rem;
+    }
+    #about p, #team p{
+        font-size: 1rem;
+    }
+    .text
+    {
+        margin:1rem;
+    }
+    #team .row .name h4{
+        font-size: 1.2rem;
+    }
+    #team .row .name p{
+        font-size: 1rem;
+    }
+    #team .row .name a{
+        font-size: 1rem;
+    }
+    footer p{
+        font-size: 0.8rem;
+        margin-left: auto;
+        letter-spacing: 0;
+    }
+    .footer-links li a{
+        font-size: 0.8em;
+    }
+}
+
+@keyframes fadeUp
+{
+    0%
+    {
+        transform:translateY(4rem);
+    }
+    100%
+    {
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes scale
+{
+    0%
+    {
+        transform:scale(2);
+    }
+    100%
+    {
+        opacity:1;
+        transform:scale(1);
+    }
+}
+
+@keyframes fadeDown
+{
+    0%
+    {
+        transform:translateY(-1rem);
+    }
+    100%
+    {
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes up
+{
+    0%
+    {
+        opacity:0;
+    }
+    50%
+    {
+        opacity:1;
+    }
+    100%
+    {
+        opacity:0;
+        transform:translateY(0.6rem);
+    }
+}
