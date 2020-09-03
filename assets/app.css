@@ -129,7 +129,7 @@ nav button:focus{
 
 /* landing */
 #home{
-    background-image:url(https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-image:url(../images/background.jpeg);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -231,11 +231,26 @@ nav button:focus{
     line-height: 1.5;
     font-family: 'robotoLight';
     font-weight: bold;
-    font-style: italic;
 }
 .heading{
     padding-bottom:3.9rem;
     
+}
+.about-button{
+    border:2px solid var(--orange);
+    font-size: 1rem;
+    color: var(--orange);
+    font-family: 'robotoLight';
+    font-weight: bold;
+}
+.about-button:hover{
+    background: var(--orange);
+    color: var(--white);
+}
+.btn:focus, .btn:active{
+    outline: none !important;
+    box-shadow: none;
+
 }
 .first-letter
 {
@@ -315,25 +330,24 @@ nav button:focus{
     justify-content: center;
     align-items:center
 }
-.btn
+#events .btn
 {
-   background-color:transparent;
-   border-radius:5px 10px 5px 10px;
+   border-radius: 0;
 }
 
 #know
 {
-    border:1px solid var(--green);
-    color:var(--green);
+    border:1px solid #355943;
+    background-color:#355943;
+    color: white;
 }
 #register
 {
     border:1px solid var(--yellow);
     color:var(--yellow);
-    margin-left: 6rem;
     
 }
-#know:hover,#register:hover
+#register:hover
 {
     border:1px solid var(--orange);
     color:var(--orange);
@@ -555,10 +569,7 @@ footer p{
     #about p, #team p{
         font-size: 1rem;
     }
-    #register
-    {
-    float:right;
-    }
+
     .text
     {
         margin:1rem;

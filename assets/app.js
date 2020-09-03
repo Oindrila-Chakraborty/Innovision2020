@@ -1,4 +1,5 @@
-$('.navbar-collapse a').click(function(){
+window.addEventListener("load",function(e){
+  $('.navbar-collapse a').click(function(){
     $(".navbar-collapse").collapse('hide');
 });
 var myNav = document.querySelector('.navbar');
@@ -35,6 +36,13 @@ var Et = setInterval(function() {
     document.getElementById("hours").innerHTML = "00";
     document.getElementById("min").innerHTML = "00";
     document.getElementById("seconds").innerHTML = "00";
+    var reg=document.querySelectorAll("#register");
+    for(var i=0;i<reg.length;i++)
+    {
+      reg[i].classList.add("disabled");
+      reg[i].style.border="1px solid grey";
+      reg[i].style.color="grey";
+    }
     }
   }, 1000);
 
@@ -50,3 +58,4 @@ var Et = setInterval(function() {
     $("body").css('overflow-y', 'auto');
     $("html").css('overflow-y', 'auto');
   });
+});
