@@ -321,8 +321,8 @@ nav button:focus{
     font-weight: 100;
     font-family: 'aquireLight';
 }
-.card-body .card-text{
-    font-size:1.2rem;
+.card-body .card-text p{
+    font-size:1rem;
     color:var(--white);
     font-family: 'robotoLight';
 }
@@ -384,7 +384,7 @@ nav button:focus{
 .modal-header .modal-title{
     font-family: 'aquireBold';
 }
-.modal-body
+.modal-body p
 {
     color:var(--deepblue);
     font-family: 'robotoLight';  
@@ -394,6 +394,32 @@ nav button:focus{
     color:var(--orange);
     font-family: 'aquireLight';
 }
+.modal-body h4
+{
+    font-family: 'aquireLight';
+}
+.modal-body p a
+{
+    font-family: 'robotoLight'; 
+    color:var(--orange);
+}
+.fa-whatsapp
+{
+    color:var(--green);
+    font-size:1.2rem;
+    padding-left:0.5rem;
+}
+.fa-whatsapp:hover
+{
+    color:var(--orange);
+    font-size:1.5rem;
+}
+.card-text p span
+{
+    color:var(--yellow);
+    font-family:"robotoLight";
+}
+
 .close:focus
 {
     outline:none;
@@ -465,24 +491,11 @@ nav button:focus{
     height: 80%;
     width: 80%;
 }
-#team .row .name h4{
-    font-family: 'aquire';
-    color: var(--deepblue);
-    font-size: 1.5rem;
-}
-#team .row .name p{
-    font-family: 'robotoMedium';
-    font-style: italic;
-    color: var(--orange);
-    font-size: 1rem;
-}
-#team .row .name a{
-    color:var(--green);
-    font-size: 1.2em;
-    transition: all 1s;
-}
-#team .row .name a:hover{
-   color: #459663;
+
+#dept
+{
+    color:var(--orange);
+    font-family: 'aquireLight';
 }
 
 /* footer */
@@ -587,7 +600,7 @@ footer p{
         font-size:1.2rem;
     }
     #event-timer{
-        width: 100%;
+        width: 80%;
     }
     #event-timer div
     {
