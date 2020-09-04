@@ -411,7 +411,7 @@ nav button:focus{
     padding-left: 0.5em;
     padding-right: 0.5em;
     padding-bottom: 1em;
-    
+    position: relative;
 }
 .overlay {
     position: absolute;
@@ -432,6 +432,9 @@ nav button:focus{
     border-left: 2px solid var(--orange);
     letter-spacing: 1px;
     padding: 0.3em 0.3em 0.3em 0.5em;
+  }
+  #gallery .col-md-4:hover .overlay {
+    opacity: 1;
   }
   #gallery .col-md-4:hover .overlay {
     opacity: 1;
