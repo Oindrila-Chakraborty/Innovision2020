@@ -217,7 +217,7 @@ nav button:focus{
 }
 
 
-#about, #events, #team{
+#about, #events, #team, #gallery{
     padding: 3.9em; 
     padding-top:3.9em;   
     background-color: #eef6e2;
@@ -235,6 +235,15 @@ nav button:focus{
 .heading{
     padding-bottom:3.9rem;
     
+}
+#about .row img{
+    height: 90%;
+    width: 90%;
+}
+#about .row .col-lg-6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .about-button{
     border:2px solid var(--orange);
@@ -265,10 +274,6 @@ nav button:focus{
     color:var(--orange);
     font-weight:100;
     font-family: 'aquire';
-}
-.text
-{
-    margin:4rem;
 }
 .line-1
 {
@@ -397,7 +402,9 @@ nav button:focus{
     opacity:1;
 }
 
-
+#gallery{
+    background-color: var(--green);
+}
 
 /* team */
 #team .line-1
@@ -566,16 +573,14 @@ footer p{
     {
         top:85vh;
     }
-    #about, #events, #team{
+    #about, #events, #team, #gallery{
         padding:2.9rem 1rem;
     }
     #about p, #team p{
         font-size: 1rem;
     }
-
-    .text
-    {
-        margin:1rem;
+    .text{
+        margin-bottom: 2rem;
     }
     #team .row .name h4{
         font-size: 1.2rem;
@@ -593,6 +598,9 @@ footer p{
     }
     .footer-links li a{
         font-size: 0.8em;
+    }
+    .modal-content{
+        height: 60vh;
     }
 }
 
