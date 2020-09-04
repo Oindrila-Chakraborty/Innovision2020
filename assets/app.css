@@ -406,7 +406,38 @@ nav button:focus{
     font-size:2rem;
     opacity:1;
 }
+/* gallery */
+#gallery .col-md-4, #gallery .col-6{
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 1em;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    bottom: 0.8em;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: white;
+    width: 95%;
+    transition: .5s ease;
+    opacity:0;
+    font-size: 1.2em;
+    padding: 15px 20px 10px 30px;
 
+    
+  }
+  .overlay p{
+    font-family: 'robotoLight';
+    border-left: 2px solid var(--orange);
+    letter-spacing: 1px;
+    padding: 0.3em 0.3em 0.3em 0.5em;
+  }
+  #gallery .col-md-4:hover .overlay {
+    opacity: 1;
+  }
 /* team */
 #team .line-1
 {
@@ -603,6 +634,19 @@ footer p{
     .modal-content{
         height: 60vh;
     }
+    .overlay {
+        position: absolute;
+        bottom: 1em;
+        width: 92%;
+        font-size: 1em;
+        padding: 4px 20px 1px 20px;
+        height: 40px;
+    
+        
+      }
+      .overlay p{
+        padding: 0.1em 0.3em 0.1em 0.5em;
+      }
 }
 
 @keyframes fadeUp
