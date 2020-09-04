@@ -227,7 +227,7 @@ nav button:focus{
 #about p, #team p
 {
     color:var(--blue);
-    font-size:1.2rem;
+    font-size:1rem;
     line-height: 1.5;
     font-family: 'robotoLight';
     font-weight: bold;
@@ -334,7 +334,7 @@ nav button:focus{
 {
     padding:0.5rem 1rem;
 }
-#events .col-md-8,#events .col-md-4
+#events .col-md-8,#events .col-md-4,#team .col-md-6
 {
     display:flex;
     justify-content: center;
