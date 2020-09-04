@@ -232,6 +232,11 @@ nav button:focus{
     font-family: 'robotoLight';
     font-weight: bold;
 }
+#team p
+{
+    color:var(--white);
+
+}
 .heading{
     padding-bottom:3.9rem;
     
@@ -292,7 +297,7 @@ nav button:focus{
 }
 
 /* events */
-#events
+#events,#team
 {
     background-color:var(--blue);
 }
@@ -400,10 +405,6 @@ nav button:focus{
     border:none;
     font-size:2rem;
     opacity:1;
-}
-
-#gallery{
-    background-color: var(--green);
 }
 
 /* team */
@@ -527,7 +528,7 @@ footer p{
         position: fixed;
         top: 0px; 
         left: 0;
-        padding:30vh 20px 20vh 20px;
+        padding:20vh 20px 20vh 20px;
         width: 70%;
         height: 100vh;
         background-color: var(--deepblue);
