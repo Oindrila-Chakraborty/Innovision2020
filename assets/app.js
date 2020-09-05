@@ -17,7 +17,7 @@ window.onscroll = function () {
 };
 
 
-var eventDate = new Date("Sept 12, 2020 10:00:00").getTime();
+var eventDate = new Date("Sept 11, 2020 09:30:00").getTime();
 
 var Et = setInterval(function() {
     var current = new Date().getTime();
