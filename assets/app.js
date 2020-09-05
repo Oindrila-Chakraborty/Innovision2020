@@ -45,12 +45,18 @@ var Et = setInterval(function() {
   //   reg[0].classList.add("disabled");
   //   reg[1].classList.add("disabled");
   //   reg[3].classList.add("disabled");
+  //   reg[0].innerHTML="REGISTRATION CLOSED";
+  //   reg[1].innerHTML="REGISTRATION CLOSED";
+  //   reg[3].innerHTML="REGISTRATION CLOSED";
   // }
   // if(x>11)
   // {
   //   reg[2].classList.add("disabled");
   //   reg[6].classList.add("disabled");
   //   reg[7].classList.add("disabled");
+  //   reg[0].innerHTML="REGISTRATION CLOSED";
+  //   reg[1].innerHTML="REGISTRATION CLOSED";
+  //   reg[3].innerHTML="REGISTRATION CLOSED";
   // }
   AOS.init({
     duration: 1200,

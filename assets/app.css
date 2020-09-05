@@ -96,7 +96,7 @@ nav a{
     font-family: 'robotoLight';
 }
 nav .navbar-nav{
-    width: 50%;
+    width: 60%;
     font-size: 1.2rem;
 }
 nav .nav-link{
@@ -553,10 +553,18 @@ footer p{
 }
 @media screen and (min-width:769px) and (max-width:1200px){
     nav .navbar-nav{
-        width: 80%;
+        width: 90%;
+        font-size: 1rem;
     }
+    
 }
 @media screen and (max-width:768px){
+    .first-letter{
+        font-size: 3rem;
+    }
+    .section-heading{
+        font-size:2rem;
+    }
     html{
         scroll-padding-top: 5rem;
     }
@@ -565,6 +573,7 @@ footer p{
         transition: left 500ms ease-in-out;
     }
     .navbar-nav{
+        
         opacity:1;
         animation:fadeRight 0s forwards;
         animation-delay: 0s;
@@ -585,7 +594,7 @@ footer p{
     .nav-link
     {
         padding:20px;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     
     .navbar-collapse {
@@ -638,7 +647,7 @@ footer p{
     {
         top:85vh;
     }
-    #about, #events, #team, #gallery{
+    #about, #events, #team, #gallery, #schedule{
         padding:2.9rem 1rem;
     }
     #about p, #team p{
