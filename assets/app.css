@@ -452,6 +452,28 @@ nav button:focus{
 {
     width:135px;
 }
+#schedule .timetable{
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1rem;
+    border-left: 1.5px solid var(--deepblue);
+}
+#schedule .timetable p{
+    font-family: 'robotoLight';
+    font-weight: bold;
+}
+#schedule .timetable .col-12{
+    font-size: 1.3rem;
+    
+}
+#schedule .timetable .col-12 p{
+    font-family: 'aquire';
+    color: var(--blue);
+    border-bottom: 1px solid var(--blue)
+}
+#schedule .timetable .time p{
+    color: var(--orange);
+}
 
 /* gallery */
 #gallery .heading .line-1{
@@ -704,6 +726,13 @@ footer p{
     }
     #team .row .name a{
         font-size: 1rem;
+    }
+    #schedule .timetable{
+        width: 100%;
+        font-size: 1rem;
+    }
+    #schedule .timetable .col-12{
+        font-size: 1.1rem;
     }
     footer p{
         font-size: 0.8rem;
