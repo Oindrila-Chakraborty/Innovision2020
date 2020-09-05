@@ -322,9 +322,23 @@ nav button:focus{
     font-family: 'aquireLight';
 }
 .card-body .card-text p{
-    font-size:1rem;
+    font-size:0.9rem;
     color:var(--white);
     font-family: 'robotoLight';
+}
+.card-body .card-text .col-lg-12 p
+{
+    font-size:0.8rem;
+}
+.fa-whatsapp
+{
+    color:var(--green);
+    font-size:1rem;
+}
+.fa-whatsapp:hover
+{
+    color:var(--orange);
+    font-size:1.2rem;
 }
 .right-text
 {
@@ -403,23 +417,11 @@ nav button:focus{
     font-family: 'robotoLight'; 
     color:var(--orange);
 }
-.fa-whatsapp
-{
-    color:var(--green);
-    font-size:1.2rem;
-    padding-left:0.5rem;
-}
-.fa-whatsapp:hover
-{
-    color:var(--orange);
-    font-size:1.5rem;
-}
-.card-text p span
+.card-text div span
 {
     color:var(--yellow);
     font-family:"robotoLight";
 }
-
 .close:focus
 {
     outline:none;
