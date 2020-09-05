@@ -217,7 +217,7 @@ nav button:focus{
 }
 
 
-#about, #events, #team, #gallery{
+#about, #events, #team, #gallery,#schedule{
     padding: 3.9em; 
     padding-top:3.9em;   
     background-color: #eef6e2;
@@ -232,11 +232,7 @@ nav button:focus{
     font-family: 'robotoLight';
     font-weight: bold;
 }
-#team p
-{
-    color:var(--white);
 
-}
 .heading{
     padding-bottom:3.9rem;
     
@@ -282,7 +278,7 @@ nav button:focus{
 }
 .line-1
 {
-    width:200px;
+    width:190px;
     background-color: var(--yellow);
     height:10px;
     margin-bottom:10px;
@@ -290,16 +286,24 @@ nav button:focus{
 }
 .line-2
 {
-    width:100px;
+    width:95px;
     background-color: var(--green);
     height:10px;
     border-radius:5px 50px 50px 5px;
 }
 
 /* events */
-#events,#team
+#events,#gallery
 {
     background-color:var(--blue);
+}
+#events .heading .line-1
+{
+    width: 210px;
+}
+#events .heading .line-2
+{
+    width:105px;
 }
 .card
 {
@@ -364,18 +368,23 @@ nav button:focus{
     border:1px solid var(--green);
     color:var(--green);
 }
+#problem
+{
+    border:1px solid #5bc0de;
+    color:#5bc0de
+}
 #register
 {
     border:1px solid var(--yellow);
     color:var(--yellow);
     
 }
-#register:hover,#know:hover
+#register:hover,#know:hover,#problem:hover
 {
     border:1px solid var(--orange);
     color:var(--orange);
 }
-#know:focus,#register:focus
+#know:focus,#register:focus,#problem:focus
 {
     outline:none;
 }
@@ -434,7 +443,23 @@ nav button:focus{
     font-size:2rem;
     opacity:1;
 }
+/* schedule */
+#schedule .heading .line-1
+{
+    width:270px;
+}
+#schedule .heading .line-2
+{
+    width:135px;
+}
+
 /* gallery */
+#gallery .heading .line-1{
+    width:230px;
+}
+#gallery .heading .line-2{
+    width:115px;
+}
 #gallery .col-md-4, #gallery .col-6{
     padding-left: 0.5em;
     padding-right: 0.5em;
@@ -468,21 +493,13 @@ nav button:focus{
     opacity: 1;
   }
 /* team */
-#team .line-1
+#team .heading .line-1
 {
-    width:250px;
+    width:280px;
 }
-#team .line-2
+#team .heading .line-2
 {
-    width:125px;
-}
-#events .line-1
-{
-    width:180px;
-}
-#events .line-2
-{
-    width:90px;
+    width:190px;
 }
 #team .row .col-6{
     padding-bottom: 5rem;
@@ -575,7 +592,7 @@ footer p{
         position: fixed;
         top: 0px; 
         left: 0;
-        padding:20vh 20px 20vh 20px;
+        padding:10vh 20px 10vh 20px;
         width: 70%;
         height: 100vh;
         background-color: var(--deepblue);
@@ -742,5 +759,20 @@ footer p{
     {
         opacity:0;
         transform:translateY(0.6rem);
+    }
+}
+@media screen and (max-width:400px){
+    #event-timer div
+    {
+    margin:0.3rem;
+    width:3rem;
+    height:3rem;
+    padding:0.2rem;
+    color:var(--orange);
+    font-size:0.5rem;
+    }
+    #event-timer span
+    {
+    font-size:1rem;
     }
 }
