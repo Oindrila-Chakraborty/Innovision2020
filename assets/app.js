@@ -1,4 +1,4 @@
-window.addEventListener("load",function(e){
+(function(){
   $('.navbar-collapse a').click(function(){
     $(".navbar-collapse").collapse('hide');
 });
@@ -36,16 +36,22 @@ var Et = setInterval(function() {
     document.getElementById("hours").innerHTML = "00";
     document.getElementById("min").innerHTML = "00";
     document.getElementById("seconds").innerHTML = "00";
-    var reg=document.querySelectorAll("#register");
-    for(var i=0;i<reg.length;i++)
-    {
-      reg[i].classList.add("disabled");
-      reg[i].style.border="1px solid grey";
-      reg[i].style.color="grey";
-    }
     }
   }, 1000);
-
+  // var reg=document.querySelectorAll("#register");
+  // var x = new Date().getDate();
+  // if(x>10)
+  // {
+  //   reg[0].classList.add("disabled");
+  //   reg[1].classList.add("disabled");
+  //   reg[3].classList.add("disabled");
+  // }
+  // if(x>11)
+  // {
+  //   reg[2].classList.add("disabled");
+  //   reg[6].classList.add("disabled");
+  //   reg[7].classList.add("disabled");
+  // }
   AOS.init({
     duration: 1200,
   })
@@ -58,4 +64,4 @@ var Et = setInterval(function() {
     $("body").css('overflow-y', 'auto');
     $("html").css('overflow-y', 'auto');
   });
-});
+})();
