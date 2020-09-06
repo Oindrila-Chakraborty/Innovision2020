@@ -26,10 +26,42 @@ var Et = setInterval(function() {
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    document.getElementById("days").innerHTML = days;
-    document.getElementById("hours").innerHTML = hours;
-    document.getElementById("min").innerHTML = minutes;
-    document.getElementById("seconds").innerHTML = seconds;
+    var daysCount = Math.floor(Math.log10(days)+1);
+    var hoursCount = Math.floor(Math.log10(hours)+1);
+    var minutesCount = Math.floor(Math.log10(minutes)+1);
+    var secondsCount = Math.floor(Math.log10(seconds)+1);
+    if (daysCount>1)
+    {
+      document.getElementById("days").innerHTML = days;
+    }
+    else
+    {
+      document.getElementById("days").innerHTML = "0"+days;
+    }
+    if (hoursCount>1)
+    {
+      document.getElementById("hours").innerHTML = hours;
+    }
+    else
+    {
+      document.getElementById("hours").innerHTML = "0"+hours;
+    }
+    if(minutesCount>1)
+    {
+      document.getElementById("min").innerHTML = minutes;
+    }
+    else
+    {
+      document.getElementById("min").innerHTML = "0"+minutes;
+    }
+    if(secondsCount>1)
+    {
+      document.getElementById("seconds").innerHTML = seconds;
+    }
+    else
+    {
+      document.getElementById("seconds").innerHTML ="0"+seconds;
+    }
     if (distance < 0) {
       clearInterval(Et);
     document.getElementById("days").innerHTML = "00";
