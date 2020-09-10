@@ -17,7 +17,7 @@ window.onscroll = function () {
 };
 
 
-var eventDate = new Date("Sept 11, 2020 09:30:00").getTime();
+var eventDate = new Date("Sept 11, 2020 10:00:00").getTime();
 
 var Et = setInterval(function() {
     var current = new Date().getTime();
@@ -93,6 +93,12 @@ var Et = setInterval(function() {
     reg[2].innerHTML="REGISTRATION CLOSED";
     reg[6].innerHTML="REGISTRATION CLOSED";
     reg[7].innerHTML="REGISTRATION CLOSED";
+  }
+  if(x>12)
+  {
+    reg[2].classList.add("disabled");
+    reg[2].innerHTML="REGISTRATION CLOSED";
+
   }
   AOS.init({
     duration: 1200,
