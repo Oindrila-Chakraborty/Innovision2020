@@ -18,7 +18,7 @@ window.onscroll = function () {
 
 
 var eventDate = new Date("Sept 11, 2020 10:00:00").getTime();
-
+var reg=document.querySelectorAll("#register");
 var Et = setInterval(function() {
     var current = new Date().getTime();
     var distance = eventDate - current;
@@ -68,38 +68,15 @@ var Et = setInterval(function() {
     document.getElementById("hours").innerHTML = "00";
     document.getElementById("min").innerHTML = "00";
     document.getElementById("seconds").innerHTML = "00";
+    for(var x=0;x<reg.length;x++)
+    {
+      reg[x].classList.add("disabled");
+      reg[x].innerHTML="REGISTRATION CLOSED"; 
+    }
+    
     }
   }, 1000);
-  // var reg=document.querySelectorAll("#register");
-  // var x = new Date().getDate();
-  // if(x>10)
-  // {
-  //   reg[0].classList.add("disabled");
-  //   reg[1].classList.add("disabled");
-  //   reg[3].classList.add("disabled");
-  //   reg[4].classList.add("disabled");
-  //   reg[5].classList.add("disabled");
-  //   reg[0].innerHTML="REGISTRATION CLOSED";
-  //   reg[1].innerHTML="REGISTRATION CLOSED";
-  //   reg[3].innerHTML="REGISTRATION CLOSED";
-  //   reg[4].innerHTML="REGISTRATION CLOSED";
-  //   reg[5].innerHTML="REGISTRATION CLOSED";
-  // }
-  // if(x>11)
-  // {
-  //   reg[2].classList.add("disabled");
-  //   reg[6].classList.add("disabled");
-  //   reg[7].classList.add("disabled");
-  //   reg[2].innerHTML="REGISTRATION CLOSED";
-  //   reg[6].innerHTML="REGISTRATION CLOSED";
-  //   reg[7].innerHTML="REGISTRATION CLOSED";
-  // }
-  // if(x>12)
-  // {
-  //   reg[2].classList.add("disabled");
-  //   reg[2].innerHTML="REGISTRATION CLOSED";
 
-  // }
   AOS.init({
     duration: 1200,
   })
